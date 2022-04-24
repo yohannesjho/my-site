@@ -3,10 +3,23 @@
     <header>
         <title>My personal site!</title>
         <style>
+            body{
+                background-color:blue;
+            }
           h1{
               color:blue;
+              text-align:center;
+              font-size:50px;
+              font-family:sans-serif;
+              font-weight:100;
           }
-          div{
+          h3{
+              color:blue;
+              text-align:center;
+              
+          }
+          #first{
+               position:relative;
                background-color:bisque;
                border-color:bisque;
                border-width:0in;
@@ -17,22 +30,83 @@
                margin-left:10px;
                margin-bottom:400px;
           }
+
+          #second{
+              position:relative;
+              bottom:350px;
+              width:15%;
+            
+              margin:auto;
+               
+          }
           img{
+              display:block;
+              margin:auto;
               width:300px;
               border-color:blue;
               border-width:2px;
               border-style:solid;
               border-radius:10px;
           }
-
+          a:hover{
+              color:blue;
+              
+          }
+          #one{
+              position:absolute;
+              right:6px;
+               
+              font-size:50px;
+              font-weight:5;
+          }
+          #navbar{
+            position:fixed;
+            top:5px;
+            right:18px;
+            left:18px;
+            height:60px;
+            background-color:bisque;
+          }
+          p{
+            font-family:sans;
+            font-size:30px;
+            width:40%; 
+            margin:auto;
+            color:blue;
+            font-weight:25;
+          }
+          .link{
+              font-size:50px;
+              color:white;
+              
+             
+          }
+           
+  
         </style>
     </header>
     <body>
-        <div>
-            <h1>Hey!,i'm yohannes fikre<br>a university student  wisdom seeker! and emerging life adventure</I></h1>
+        <div id="first">
+            <h1>Hey! i'm yohannes fikre</h1>
+            <h3>a university student  wisdom seeker! and emerging life adventure</h3>
+            <nav id="navbar">
+                
+                  <a id="one" href="">contact</a>
+                
+            </nav>
             <img src="C:\Users\OWN-IT\OneDrive\Desktop\photo_2020-09-30_17-51-53.jpg" alt="">
-            <p style="font-family:monospace; font-size:25px;" >here is my story<br>my name is yohannes fikre, i'm from ethiopia currently i'm 22 years of age
+            <h1>here is my story</h1>
+            <p  >my name is yohannes fikre, i'm from ethiopia currently i'm 22 years of age
                  and  attending a computer science at haile sillasie university/Addis Ababa university</p>
         </div>
+         
+        <div id="second">
+          
+                <a class="link" href="https://www.facebook.com/profile.php?id=100022097883957">Facebook</a><br><br>
+                <a class="link" href="https://t.me/Jhonio">Telegram</a><br><br>
+                <a class="link" href="https://www.linkedin.com/in/yohannes-fikre-mamo-104703234/">Linkedin</a>
+            
+        </div>
+
     </body>
 </html>
