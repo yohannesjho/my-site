@@ -4,7 +4,7 @@
         <title>My personal site!</title>
         <style>
             body{
-                background-color:blue;
+                background-color:rgb(25, 117, 209);
                 position:relative;
             }
           h1{
@@ -19,7 +19,7 @@
               text-align:center;
               
           }
-          #first{
+          .first{
                position:relative;
                background-color:bisque;
                border-color:bisque;
@@ -29,12 +29,13 @@
                margin-top:10px;
                margin-right:10px;
                margin-left:10px;
-               margin-bottom:400px;
+               margin-bottom:40px;
+               height:1000px;
           }
 
           #second{
               position:relative;
-              bottom:350px;
+              
               width:15%;
             
               margin:auto;
@@ -48,6 +49,7 @@
               border-width:2px;
               border-style:solid;
               border-radius:10px;
+              height:500px;
           }
           a:hover{
               color:blue;
@@ -68,13 +70,13 @@
             height:60px;
             background-color:bisque;
           }
-          p{
+          .blue{
             font-family:sans;
             font-size:30px;
             width:40%; 
             margin:auto;
             color:blue;
-            font-weight:25;
+            font-weight:5;
           }
           .link{
               font-size:50px;
@@ -82,7 +84,7 @@
               
              
           }
-          .one{
+          .parent{
                
                border-color:bisque;
                border-width:1px;
@@ -92,6 +94,11 @@
                margin-right:10px;
                margin-left:10px;
                height:800px;
+            }
+            .one{
+                width:50%;
+                height:100%;
+                float:left;
             }
             .two{
                 width:50%;
@@ -108,16 +115,84 @@
                 font-size:30px;
                 font-weight:50;
             }
-            p{
+            .white{
+                color:white;
+                font-size:30px;
+                font-family:sans-serif;
+                font-weight:5;
+                margin:auto;
+                width:40%;
+            }
+            #third{
+                margin-top:50px;
+                margin-bottom:50px;
+                height:
+            }
+            .four{
+                display:inline;
+            }
+            .image{
+                width:50px;
+                height:50px;
+                display:inline;
+                margin-right:20px;
+            }
+            #smedia{
+                width:400px;
+                margin-top:20px;
+                margin:auto;
+            }
+            #last{
+                height:100px;
+                margin:20px 20px 20px 20px;
+                background-color:bisque;
+            }
+            form{
+
+                width:50%;
+                margin:auto;
+            }
+            .form{
+                background-color: rgb(52, 89, 236);
+                height:35px;
+                width:250px;
+            }
+            .message{
+                height:140px;
+                width:500px;
+
+            }
+            .submit{
+                border-radius:30px;
+                width:90px;
+            }
+            button:hover{
+                color: bisque;
+            }
+            .dec{
                 color:white;
             }
-           
+            .head{
+                font-size:60px;
+                font-family:sans-serif;
+                font-weight:100;
+                margin:auto;
+                margin-top:40px;
+                margin-left:40px;
+            }
+            .para{
+                font-size:30px;
+                font-family:sans-serif;
+                font-weight:100;
+                margin-left:50px;
+
+            }
            
   
         </style>
     </header>
     <body>
-        <div id="first">
+        <div class="first">
             <h1>Hey! i'm yohannes fikre</h1>
             <h3>a university student  wisdom seeker! and emerging life adventure</h3>
             <nav id="navbar">
@@ -127,31 +202,80 @@
             </nav>
             <img src="C:\Users\OWN-IT\OneDrive\Desktop\photo_2020-09-30_17-51-53.jpg" alt="">
             <h1>here is my story</h1>
-            <p  >my name is yohannes fikre, i'm from ethiopia currently i'm 22 years of age
+            <p class="blue">my name is yohannes fikre, i'm from ethiopia currently i'm 22 years of age
                  and  attending a computer science at haile sillasie university/Addis Ababa university</p>
         </div>
          
         <div id="second">
-          
+         
                 <a class="link" href="https://www.facebook.com/profile.php?id=100022097883957">Facebook</a><br><br>
                 <a class="link" href="https://t.me/Jhonio">Telegram</a><br><br>
                 <a class="link" href="https://www.linkedin.com/in/yohannes-fikre-mamo-104703234/">Linkedin</a>
             
         </div>
 
-        <div class="one ">
+        <div class="parent ">
+            <div class="one">
+                <h1 class="dec"><ul>my educational background so far</ul></h1>
+        
+                <h1 class="dec">High school deploma :-Dilachin preparatory school</h1>
+                 
+                <h1 class="dec"><ul>now BA in computer science:-Addis Ababa university</ul></h1>
+                  
+            </div>
+            
             <div class="two" >
-                      
+                   <header class="head">soft skills</header> 
+                   <p class="para">
+                    ➢ Languages: C/C++, Java, Python, HTML, CSS,<br>
+                    ➢ Ms-office: word, excel, and PowerPoint.<br>
+                    ➢ Operating system: Linux, windows.<br>
+                    ➢ Others: Algorithm analysis and design, Solid background in mathematic <br> 
+                    ➢ 3D modelling <br>
+                   </p>
+                   <header class="head">interests and hobbies</header>
+                   <p class="para">
+                    ➢ physical exercises<br>
+                    ➢ watching movies and listening songs<br>
+                    ➢ reading books<br>
+                   </p>
             </div>
                  
         </div>
 
         <section class="three">
             <h4 id="four">some of my thoughts</h4>
-            <p>I'm a paragraph. Click here to add your own text and edit me. 
+            <p class="white">I'm a paragraph. Click here to add your own text and edit me. 
                 It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
                  I’m a great place for you to tell a story and let your users know a little more about you.</p>
         </section>
+        
+        <div id="third">
+            <img src="C:\Users\OWN-IT\OneDrive\Desktop\download.jfif">
+        </div>
+        <div class="first">
+             <h1>Ready to connect</h1>
+             <h3>dont hesitate to reach out!</h3>
+             <form action="">
+                 <input class="form" type="text" name="first-name"><br>First Name*<br><br>
+                 <input class="form" type="text" name="last-name"><br>Last Name*<br><br>
+                 <input class="form" type="text" name="email"><br>Email*<br><br>
+                 <input class="form message" type="text" name="message"><br>Message*<br><br>
+                 <button class="form submit" type="submit" name="submit">Submit</button>
+             </form>
+             <h1>yohannes fikre</h1>
+             <h3>yohannesjho12@gmail.com</h3>
+        </div>
+        <section id="smedia">
+            <a href="https://www.linkedin.com/in/yohannes-fikre-mamo-104703234/"><img class="image" src="C:\Users\OWN-IT\OneDrive\Desktop\download.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100022097883957"><img class="image"src="C:\Users\OWN-IT\OneDrive\Desktop\download (1).png"></a>
+            <a href="https://t.me/Jhonio"><img class="image" src="C:\Users\OWN-IT\OneDrive\Desktop\download (1).jfif"></a>
+        </section>
+
+        <footer id="last">
+              <p class="blue">© 2022 by yohannes fikre, created with html and css</p>
+        </footer>
+
         
 
     </body>
